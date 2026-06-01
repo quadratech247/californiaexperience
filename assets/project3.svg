@@ -1,0 +1,139 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#030a0d"/>
+      <stop offset="100%" stop-color="#071018"/>
+    </linearGradient>
+    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+    <linearGradient id="funnelG" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0.6"/>
+    </linearGradient>
+    <linearGradient id="lineG3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#10b981" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow3"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg3)"/>
+  <!-- orbs -->
+  <circle cx="720" cy="100" r="200" fill="#10b981" opacity="0.05"/>
+  <circle cx="80" cy="400" r="160" fill="#06b6d4" opacity="0.04"/>
+
+  <!-- navbar -->
+  <rect x="0" y="0" width="800" height="54" fill="rgba(3,10,13,0.97)"/>
+  <rect x="0" y="53" width="800" height="1" fill="rgba(16,185,129,0.15)"/>
+  <rect x="22" y="13" width="32" height="32" rx="8" fill="rgba(16,185,129,0.15)" stroke="rgba(16,185,129,0.5)" stroke-width="1"/>
+  <text x="38" y="34" font-family="sans-serif" font-size="14" font-weight="900" fill="#10b981" text-anchor="middle">S</text>
+  <text x="62" y="34" font-family="sans-serif" font-size="13" font-weight="700" fill="#fff">SaaS</text>
+  <text x="100" y="34" font-family="sans-serif" font-size="11" fill="rgba(255,255,255,0.4)">Growth Analytics</text>
+  <text x="540" y="34" font-family="sans-serif" font-size="11" fill="rgba(255,255,255,0.5)">Dashboard</text>
+  <text x="610" y="34" font-family="sans-serif" font-size="11" fill="rgba(255,255,255,0.5)">Reports</text>
+  <text x="670" y="34" font-family="sans-serif" font-size="11" fill="rgba(255,255,255,0.5)">Leads</text>
+  <rect x="715" y="16" width="62" height="26" rx="6" fill="rgba(16,185,129,0.2)" stroke="rgba(16,185,129,0.5)" stroke-width="1"/>
+  <text x="746" y="33" font-family="sans-serif" font-size="10" fill="#10b981" text-anchor="middle" font-weight="600">+ New Lead</text>
+
+  <!-- KPI cards top -->
+  <rect x="22" y="68" width="160" height="80" rx="14" fill="rgba(16,185,129,0.07)" stroke="rgba(16,185,129,0.2)" stroke-width="1"/>
+  <text x="40" y="92" font-family="sans-serif" font-size="10" fill="rgba(255,255,255,0.5)" font-weight="600">MRR</text>
+  <text x="40" y="125" font-family="sans-serif" font-size="28" font-weight="900" fill="#fff">$48.2K</text>
+  <text x="40" y="142" font-family="sans-serif" font-size="10" fill="#10b981">↑ +18.4% MoM</text>
+
+  <rect x="194" y="68" width="150" height="80" rx="14" fill="rgba(6,182,212,0.07)" stroke="rgba(6,182,212,0.2)" stroke-width="1"/>
+  <text x="212" y="92" font-family="sans-serif" font-size="10" fill="rgba(255,255,255,0.5)" font-weight="600">NEW LEADS</text>
+  <text x="212" y="125" font-family="sans-serif" font-size="28" font-weight="900" fill="#fff">1,248</text>
+  <text x="212" y="142" font-family="sans-serif" font-size="10" fill="#06b6d4">↑ +31.2% MoM</text>
+
+  <rect x="356" y="68" width="150" height="80" rx="14" fill="rgba(139,92,246,0.07)" stroke="rgba(139,92,246,0.2)" stroke-width="1"/>
+  <text x="374" y="92" font-family="sans-serif" font-size="10" fill="rgba(255,255,255,0.5)" font-weight="600">CONV. RATE</text>
+  <text x="374" y="125" font-family="sans-serif" font-size="28" font-weight="900" fill="#fff">6.8%</text>
+  <text x="374" y="142" font-family="sans-serif" font-size="10" fill="#8b5cf6">↑ +1.4pp</text>
+
+  <rect x="518" y="68" width="258" height="80" rx="14" fill="rgba(255,255,255,0.02)" stroke="rgba(16,185,129,0.15)" stroke-width="1"/>
+  <text x="536" y="92" font-family="sans-serif" font-size="10" fill="rgba(255,255,255,0.5)" font-weight="600">CHURN RATE</text>
+  <text x="536" y="125" font-family="sans-serif" font-size="28" font-weight="900" fill="#22c55e">1.2%</text>
+  <text x="536" y="142" font-family="sans-serif" font-size="10" fill="#22c55e">↓ Best this year</text>
+  <text x="680" y="92" font-family="sans-serif" font-size="10" fill="rgba(255,255,255,0.4)" font-weight="600">ARR</text>
+  <text x="680" y="118" font-family="sans-serif" font-size="20" font-weight="900" fill="#fff">$578K</text>
+  <text x="680" y="138" font-family="sans-serif" font-size="9" fill="#10b981">↑ +22%</text>
+
+  <!-- Lead funnel -->
+  <rect x="22" y="162" width="260" height="210" rx="16" fill="rgba(255,255,255,0.02)" stroke="rgba(16,185,129,0.12)" stroke-width="1"/>
+  <text x="40" y="188" font-family="sans-serif" font-size="11" fill="rgba(255,255,255,0.5)" font-weight="600">LEAD FUNNEL</text>
+  <!-- funnel bars top to bottom, narrowing -->
+  <rect x="48" y="200" width="200" height="28" rx="7" fill="rgba(16,185,129,0.25)" stroke="rgba(16,185,129,0.4)" stroke-width="1"/>
+  <text x="58" y="219" font-family="sans-serif" font-size="10" fill="#fff" font-weight="600">Visitors</text>
+  <text x="230" y="219" font-family="sans-serif" font-size="10" fill="#10b981" text-anchor="end">12,480</text>
+
+  <rect x="68" y="238" width="160" height="28" rx="7" fill="rgba(6,182,212,0.2)" stroke="rgba(6,182,212,0.35)" stroke-width="1"/>
+  <text x="78" y="257" font-family="sans-serif" font-size="10" fill="#fff" font-weight="600">Leads</text>
+  <text x="210" y="257" font-family="sans-serif" font-size="10" fill="#06b6d4" text-anchor="end">3,260</text>
+
+  <rect x="88" y="276" width="120" height="28" rx="7" fill="rgba(139,92,246,0.2)" stroke="rgba(139,92,246,0.35)" stroke-width="1"/>
+  <text x="98" y="295" font-family="sans-serif" font-size="10" fill="#fff" font-weight="600">Qualified</text>
+  <text x="190" y="295" font-family="sans-serif" font-size="10" fill="#8b5cf6" text-anchor="end">1,140</text>
+
+  <rect x="108" y="314" width="80" height="28" rx="7" fill="rgba(245,158,11,0.2)" stroke="rgba(245,158,11,0.35)" stroke-width="1"/>
+  <text x="118" y="333" font-family="sans-serif" font-size="10" fill="#fff" font-weight="600">Demos</text>
+  <text x="170" y="333" font-family="sans-serif" font-size="10" fill="#f59e0b" text-anchor="end">480</text>
+
+  <rect x="128" y="352" width="40" height="14" rx="7" fill="rgba(16,185,129,0.6)"/>
+  <text x="148" y="363" font-family="sans-serif" font-size="8" fill="#fff" text-anchor="middle">84</text>
+
+  <!-- Growth line chart -->
+  <rect x="294" y="162" width="484" height="210" rx="16" fill="rgba(255,255,255,0.02)" stroke="rgba(16,185,129,0.12)" stroke-width="1"/>
+  <text x="312" y="188" font-family="sans-serif" font-size="11" fill="rgba(255,255,255,0.5)" font-weight="600">MRR GROWTH TREND</text>
+  <text x="740" y="188" font-family="sans-serif" font-size="10" fill="#10b981">+18.4%</text>
+  <!-- grid -->
+  <line x1="312" y1="205" x2="766" y2="205" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+  <line x1="312" y1="230" x2="766" y2="230" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+  <line x1="312" y1="255" x2="766" y2="255" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+  <line x1="312" y1="280" x2="766" y2="280" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+  <line x1="312" y1="305" x2="766" y2="305" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+  <line x1="312" y1="330" x2="766" y2="330" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+  <!-- area fill -->
+  <polygon points="312,355 362,330 412,322 462,300 512,290 562,265 612,258 662,235 712,218 762,200 762,355" fill="url(#lineG3)"/>
+  <!-- line -->
+  <polyline points="312,355 362,330 412,322 462,300 512,290 562,265 612,258 662,235 712,218 762,200" fill="none" stroke="url(#greenGrad)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- dots -->
+  <circle cx="612" cy="258" r="4" fill="#10b981" filter="url(#glow3)"/>
+  <circle cx="762" cy="200" r="5" fill="#06b6d4" filter="url(#glow3)"/>
+  <!-- tooltip -->
+  <rect x="726" y="178" width="60" height="22" rx="6" fill="rgba(16,185,129,0.3)" stroke="rgba(16,185,129,0.6)" stroke-width="1"/>
+  <text x="756" y="193" font-family="sans-serif" font-size="9" fill="#fff" text-anchor="middle">$48.2K</text>
+  <!-- x labels -->
+  <text x="312" y="368" font-family="sans-serif" font-size="9" fill="rgba(255,255,255,0.3)">Jan</text>
+  <text x="360" y="368" font-family="sans-serif" font-size="9" fill="rgba(255,255,255,0.3)">Feb</text>
+  <text x="408" y="368" font-family="sans-serif" font-size="9" fill="rgba(255,255,255,0.3)">Mar</text>
+  <text x="456" y="368" font-family="sans-serif" font-size="9" fill="rgba(255,255,255,0.3)">Apr</text>
+  <text x="504" y="368" font-family="sans-serif" font-size="9" fill="rgba(255,255,255,0.3)">May</text>
+  <text x="552" y="368" font-family="sans-serif" font-size="9" fill="rgba(255,255,255,0.3)">Jun</text>
+  <text x="600" y="368" font-family="sans-serif" font-size="9" fill="rgba(255,255,255,0.3)">Jul</text>
+  <text x="648" y="368" font-family="sans-serif" font-size="9" fill="rgba(255,255,255,0.3)">Aug</text>
+  <text x="698" y="368" font-family="sans-serif" font-size="9" fill="rgba(255,255,255,0.3)">Sep</text>
+  <text x="748" y="368" font-family="sans-serif" font-size="9" fill="#10b981">Oct</text>
+
+  <!-- Bottom cards -->
+  <rect x="22" y="386" width="230" height="90" rx="14" fill="rgba(255,255,255,0.02)" stroke="rgba(16,185,129,0.12)" stroke-width="1"/>
+  <text x="40" y="410" font-family="sans-serif" font-size="10" fill="rgba(255,255,255,0.5)" font-weight="600">TOP CHANNEL</text>
+  <text x="40" y="448" font-family="sans-serif" font-size="22" font-weight="900" fill="#fff">SEO Organic</text>
+  <text x="40" y="466" font-family="sans-serif" font-size="10" fill="#10b981">48% of all leads</text>
+
+  <rect x="264" y="386" width="260" height="90" rx="14" fill="rgba(255,255,255,0.02)" stroke="rgba(6,182,212,0.12)" stroke-width="1"/>
+  <text x="282" y="410" font-family="sans-serif" font-size="10" fill="rgba(255,255,255,0.5)" font-weight="600">ACTIVE CAMPAIGNS</text>
+  <rect x="282" y="420" width="70" height="28" rx="8" fill="rgba(16,185,129,0.15)" stroke="rgba(16,185,129,0.3)" stroke-width="1"/>
+  <text x="317" y="439" font-family="sans-serif" font-size="9" fill="#10b981" text-anchor="middle">Google Ads</text>
+  <rect x="362" y="420" width="60" height="28" rx="8" fill="rgba(6,182,212,0.15)" stroke="rgba(6,182,212,0.3)" stroke-width="1"/>
+  <text x="392" y="439" font-family="sans-serif" font-size="9" fill="#06b6d4" text-anchor="middle">LinkedIn</text>
+  <rect x="432" y="420" width="50" height="28" rx="8" fill="rgba(139,92,246,0.15)" stroke="rgba(139,92,246,0.3)" stroke-width="1"/>
+  <text x="457" y="439" font-family="sans-serif" font-size="9" fill="#8b5cf6" text-anchor="middle">Email</text>
+  <text x="282" y="466" font-family="sans-serif" font-size="9" fill="rgba(255,255,255,0.4)">3 active · 2 paused · Budget: $8,400/mo</text>
+
+  <rect x="536" y="386" width="242" height="90" rx="14" fill="rgba(255,255,255,0.02)" stroke="rgba(139,92,246,0.15)" stroke-width="1"/>
+  <text x="554" y="410" font-family="sans-serif" font-size="10" fill="rgba(255,255,255,0.5)" font-weight="600">CUSTOMER HEALTH</text>
+  <text x="554" y="448" font-family="sans-serif" font-size="22" font-weight="900" fill="#22c55e">NPS: 72</text>
+  <text x="554" y="466" font-family="sans-serif" font-size="10" fill="rgba(255,255,255,0.4)">98.8% uptime · 1.2% churn</text>
+</svg>

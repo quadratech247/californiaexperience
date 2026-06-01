@@ -1,0 +1,153 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg6" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050a14"/>
+      <stop offset="100%" stop-color="#0c1a10"/>
+    </linearGradient>
+    <linearGradient id="limeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#22d3ee"/>
+      <stop offset="100%" stop-color="#86efac"/>
+    </linearGradient>
+    <linearGradient id="bottleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#059669" stop-opacity="0.7"/>
+    </linearGradient>
+    <linearGradient id="waveGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#22d3ee" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow6">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#bg6)"/>
+
+  <!-- Background ambient orbs -->
+  <circle cx="100" cy="200" r="180" fill="#22d3ee" opacity="0.04"/>
+  <circle cx="700" cy="300" r="200" fill="#86efac" opacity="0.05"/>
+  <circle cx="400" cy="500" r="250" fill="#10b981" opacity="0.06"/>
+
+  <!-- Grid dots pattern -->
+  <g fill="rgba(255,255,255,0.04)">
+    <circle cx="40" cy="40" r="1.5"/><circle cx="80" cy="40" r="1.5"/><circle cx="120" cy="40" r="1.5"/>
+    <circle cx="40" cy="80" r="1.5"/><circle cx="80" cy="80" r="1.5"/><circle cx="120" cy="80" r="1.5"/>
+    <circle cx="640" cy="40" r="1.5"/><circle cx="680" cy="40" r="1.5"/><circle cx="720" cy="40" r="1.5"/>
+    <circle cx="640" cy="80" r="1.5"/><circle cx="680" cy="80" r="1.5"/><circle cx="720" cy="80" r="1.5"/>
+    <circle cx="760" cy="40" r="1.5"/><circle cx="760" cy="80" r="1.5"/>
+  </g>
+
+  <!-- Brand name header -->
+  <text x="30" y="58" font-family="'DM Sans',sans-serif" font-size="30" font-weight="900" fill="#fff" letter-spacing="-0.5">Zenith</text>
+  <text x="120" y="58" font-family="'DM Sans',sans-serif" font-size="30" font-weight="300" fill="#22d3ee" letter-spacing="3"> BEVERAGE</text>
+  <text x="30" y="80" font-family="'DM Sans',sans-serif" font-size="11" fill="#86efac" letter-spacing="4" font-weight="600">BRAND STRATEGY &amp; SOCIAL CAMPAIGN</text>
+
+  <!-- Hero product bottle (large, centerpiece) -->
+  <!-- Bottle shape with rounded top -->
+  <rect x="355" y="110" width="90" height="260" rx="30" fill="url(#bottleGrad)" opacity="0.15" filter="url(#glow6)"/>
+  <rect x="365" y="100" width="70" height="280" rx="28" fill="rgba(52,211,153,0.08)" stroke="rgba(52,211,153,0.4)" stroke-width="1.5"/>
+  <rect x="375" y="90" width="50" height="10" rx="5" fill="rgba(52,211,153,0.3)"/>
+  <rect x="378" y="84" width="44" height="10" rx="4" fill="rgba(52,211,153,0.5)"/>
+  <!-- Bottle highlight -->
+  <rect x="372" y="108" width="12" height="200" rx="6" fill="rgba(255,255,255,0.12)"/>
+  <!-- Liquid fill -->
+  <rect x="367" y="210" width="66" height="152" rx="0 0 25 25" fill="rgba(52,211,153,0.35)" opacity="0.9"/>
+  <!-- Label -->
+  <rect x="370" y="170" width="60" height="80" rx="8" fill="rgba(5,10,20,0.7)" stroke="rgba(52,211,153,0.6)" stroke-width="1"/>
+  <text x="400" y="200" font-family="sans-serif" font-size="10" font-weight="900" fill="#22d3ee" text-anchor="middle" letter-spacing="1">ZENITH</text>
+  <text x="400" y="215" font-family="sans-serif" font-size="7" fill="rgba(255,255,255,0.5)" text-anchor="middle" letter-spacing="2">PURE ENERGY</text>
+  <rect x="376" y="222" width="48" height="1" fill="rgba(52,211,153,0.5)"/>
+  <text x="400" y="237" font-family="sans-serif" font-size="8" fill="rgba(255,255,255,0.4)" text-anchor="middle">500ml</text>
+
+  <!-- Glow around bottle -->
+  <ellipse cx="400" cy="390" rx="50" ry="8" fill="#22d3ee" opacity="0.15"/>
+
+  <!-- Left panel - Social Stats -->
+  <rect x="28" y="105" width="300" height="120" rx="16" fill="rgba(255,255,255,0.03)" stroke="rgba(34,211,238,0.2)" stroke-width="1"/>
+  <text x="48" y="135" font-family="sans-serif" font-size="11" fill="rgba(255,255,255,0.5)" font-weight="600">CAMPAIGN REACH</text>
+
+  <text x="48" y="170" font-family="sans-serif" font-size="40" font-weight="900" fill="#fff">4.8M</text>
+  <text x="155" y="162" font-family="sans-serif" font-size="11" fill="#22d3ee">↑ 312%</text>
+  <text x="155" y="178" font-family="sans-serif" font-size="10" fill="rgba(255,255,255,0.4)">vs last campaign</text>
+  <text x="48" y="210" font-family="sans-serif" font-size="10" fill="rgba(255,255,255,0.4)">Total impressions across all channels</text>
+
+  <!-- Engagement bars -->
+  <rect x="28" y="240" width="300" height="130" rx="16" fill="rgba(255,255,255,0.03)" stroke="rgba(34,211,238,0.15)" stroke-width="1"/>
+  <text x="48" y="268" font-family="sans-serif" font-size="11" fill="rgba(255,255,255,0.5)" font-weight="600">PLATFORM BREAKDOWN</text>
+
+  <text x="48" y="296" font-family="sans-serif" font-size="10" fill="#fff">Instagram</text>
+  <rect x="130" y="286" width="150" height="8" rx="4" fill="rgba(255,255,255,0.06)"/>
+  <rect x="130" y="286" width="120" height="8" rx="4" fill="url(#limeGrad)"/>
+  <text x="290" y="296" font-family="sans-serif" font-size="10" fill="#22d3ee" text-anchor="end">2.1M</text>
+
+  <text x="48" y="320" font-family="sans-serif" font-size="10" fill="#fff">YouTube</text>
+  <rect x="130" y="310" width="150" height="8" rx="4" fill="rgba(255,255,255,0.06)"/>
+  <rect x="130" y="310" width="90" height="8" rx="4" fill="url(#limeGrad)"/>
+  <text x="290" y="320" font-family="sans-serif" font-size="10" fill="#22d3ee" text-anchor="end">1.4M</text>
+
+  <text x="48" y="344" font-family="sans-serif" font-size="10" fill="#fff">LinkedIn</text>
+  <rect x="130" y="334" width="150" height="8" rx="4" fill="rgba(255,255,255,0.06)"/>
+  <rect x="130" y="334" width="50" height="8" rx="4" fill="url(#limeGrad)"/>
+  <text x="290" y="344" font-family="sans-serif" font-size="10" fill="#22d3ee" text-anchor="end">0.8M</text>
+
+  <text x="48" y="368" font-family="sans-serif" font-size="10" fill="#fff">Twitter/X</text>
+  <rect x="130" y="358" width="150" height="8" rx="4" fill="rgba(255,255,255,0.06)"/>
+  <rect x="130" y="358" width="30" height="8" rx="4" fill="url(#limeGrad)"/>
+  <text x="290" y="368" font-family="sans-serif" font-size="10" fill="#22d3ee" text-anchor="end">0.5M</text>
+
+  <!-- Hashtag performance -->
+  <rect x="28" y="385" width="300" height="80" rx="16" fill="rgba(255,255,255,0.03)" stroke="rgba(134,239,172,0.2)" stroke-width="1"/>
+  <text x="48" y="410" font-family="sans-serif" font-size="11" fill="rgba(255,255,255,0.5)" font-weight="600">TOP HASHTAG</text>
+  <text x="48" y="440" font-family="sans-serif" font-size="20" font-weight="800" fill="#86efac">#DrinkZenith</text>
+  <text x="210" y="440" font-family="sans-serif" font-size="10" fill="rgba(255,255,255,0.4)">98.4K posts</text>
+
+  <!-- Right panel - ROI Chart -->
+  <rect x="470" y="105" width="300" height="160" rx="16" fill="rgba(255,255,255,0.03)" stroke="rgba(34,211,238,0.2)" stroke-width="1"/>
+  <text x="490" y="133" font-family="sans-serif" font-size="11" fill="rgba(255,255,255,0.5)" font-weight="600">SALES ROI PERFORMANCE</text>
+
+  <!-- Chart area wave -->
+  <clipPath id="chartClip">
+    <rect x="490" y="140" width="260" height="105"/>
+  </clipPath>
+  <g clip-path="url(#chartClip)">
+    <polygon points="490,245 520,220 550,235 580,190 610,200 640,165 670,175 700,150 730,160 750,140 750,245" fill="url(#waveGrad)"/>
+    <polyline points="490,245 520,220 550,235 580,190 610,200 640,165 670,175 700,150 730,160 750,140" fill="none" stroke="#22d3ee" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Data points -->
+    <circle cx="640" cy="165" r="5" fill="#22d3ee" filter="url(#glow6)"/>
+    <circle cx="750" cy="140" r="5" fill="#86efac" filter="url(#glow6)"/>
+  </g>
+  <text x="490" y="254" font-family="sans-serif" font-size="9" fill="rgba(255,255,255,0.3)">Apr    May    Jun    Jul    Aug    Sep    Oct    Nov</text>
+
+  <!-- ROI Label -->
+  <text x="490" y="158" font-family="sans-serif" font-size="9" fill="rgba(255,255,255,0.3)">+420%</text>
+  <text x="490" y="200" font-family="sans-serif" font-size="9" fill="rgba(255,255,255,0.2)">+280%</text>
+
+  <!-- Achievements row -->
+  <rect x="470" y="280" width="140" height="80" rx="14" fill="rgba(52,211,153,0.1)" stroke="rgba(52,211,153,0.3)" stroke-width="1"/>
+  <text x="540" y="310" font-family="sans-serif" font-size="22" text-anchor="middle">🏆</text>
+  <text x="540" y="328" font-family="sans-serif" font-size="11" font-weight="700" fill="#fff" text-anchor="middle">Best Campaign</text>
+  <text x="540" y="344" font-family="sans-serif" font-size="9" fill="rgba(255,255,255,0.4)" text-anchor="middle">Q3 2025 Award</text>
+
+  <rect x="624" y="280" width="146" height="80" rx="14" fill="rgba(34,211,238,0.1)" stroke="rgba(34,211,238,0.3)" stroke-width="1"/>
+  <text x="697" y="310" font-family="sans-serif" font-size="22" text-anchor="middle">📈</text>
+  <text x="697" y="328" font-family="sans-serif" font-size="11" font-weight="700" fill="#fff" text-anchor="middle">320% ROAS</text>
+  <text x="697" y="344" font-family="sans-serif" font-size="9" fill="rgba(255,255,255,0.4)" text-anchor="middle">Return On Ad Spend</text>
+
+  <!-- Influencer collab -->
+  <rect x="470" y="374" width="300" height="90" rx="16" fill="rgba(255,255,255,0.03)" stroke="rgba(134,239,172,0.2)" stroke-width="1"/>
+  <text x="490" y="400" font-family="sans-serif" font-size="11" fill="rgba(255,255,255,0.5)" font-weight="600">INFLUENCER NETWORK</text>
+
+  <circle cx="510" cy="435" r="16" fill="rgba(34,211,238,0.2)" stroke="#22d3ee" stroke-width="1"/>
+  <text x="510" y="440" font-family="sans-serif" font-size="12" text-anchor="middle">👤</text>
+  <circle cx="540" cy="435" r="16" fill="rgba(134,239,172,0.2)" stroke="#86efac" stroke-width="1"/>
+  <text x="540" y="440" font-family="sans-serif" font-size="12" text-anchor="middle">👤</text>
+  <circle cx="570" cy="435" r="16" fill="rgba(52,211,153,0.2)" stroke="#34d399" stroke-width="1"/>
+  <text x="570" y="440" font-family="sans-serif" font-size="12" text-anchor="middle">👤</text>
+  <circle cx="600" cy="435" r="16" fill="rgba(16,185,129,0.2)" stroke="#10b981" stroke-width="1"/>
+  <text x="600" y="440" font-family="sans-serif" font-size="12" text-anchor="middle">👤</text>
+
+  <text x="628" y="432" font-family="sans-serif" font-size="12" font-weight="700" fill="#fff">+28 creators</text>
+  <text x="628" y="448" font-family="sans-serif" font-size="9" fill="rgba(255,255,255,0.4)">across 6 platforms</text>
+</svg>

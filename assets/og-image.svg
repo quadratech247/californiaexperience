@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="100%" height="100%">
+  <defs>
+    <linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#030712" />
+      <stop offset="50%" stop-color="#0b1528" />
+      <stop offset="100%" stop-color="#1e1b4b" />
+    </linearGradient>
+    <linearGradient id="g2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f0ff" />
+      <stop offset="100%" stop-color="#8b5cf6" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#g1)"/>
+  <!-- Glowing background elements -->
+  <circle cx="950" cy="150" r="300" fill="#8b5cf6" opacity="0.15" filter="blur(80px)"/>
+  <circle cx="200" cy="450" r="250" fill="#00f0ff" opacity="0.12" filter="blur(60px)"/>
+  <!-- Graphic wireframe grid -->
+  <g stroke="rgba(255,255,255,0.015)" stroke-width="1.5">
+    <line x1="0" y1="150" x2="1200" y2="150"/>
+    <line x1="0" y1="300" x2="1200" y2="300"/>
+    <line x1="0" y1="450" x2="1200" y2="450"/>
+    <line x1="200" y1="0" x2="200" y2="630"/>
+    <line x1="400" y1="0" x2="400" y2="630"/>
+    <line x1="600" y1="0" x2="600" y2="630"/>
+    <line x1="800" y1="0" x2="800" y2="630"/>
+    <line x1="1000" y1="0" x2="1000" y2="630"/>
+  </g>
+  <!-- Logo representation -->
+  <g transform="translate(100, 180)">
+    <rect width="100" height="100" rx="20" fill="url(#g2)"/>
+    <text x="32" y="70" font-family="'Space Grotesk', sans-serif" font-size="60" font-weight="900" fill="#030712">Q</text>
+  </g>
+  <!-- Text titles -->
+  <text x="240" y="235" font-family="'Space Grotesk', sans-serif" font-size="54" font-weight="bold" fill="#fff" letter-spacing="-1">Quadra<tspan fill="#00f0ff">Web</tspan>Systems</text>
+  <text x="242" y="275" font-family="'DM Sans', sans-serif" font-size="20" fill="#9ca3af" letter-spacing="4" font-weight="500">DIGITAL EVOLUTION AGENCY</text>
+  <!-- Subtitle features -->
+  <text x="242" y="350" font-family="'DM Sans', sans-serif" font-size="24" fill="#fff" opacity="0.95">⚡ Web Design &amp; Development</text>
+  <text x="242" y="400" font-family="'DM Sans', sans-serif" font-size="24" fill="#fff" opacity="0.95">⚡ UI/UX Architecture</text>
+  <text x="242" y="450" font-family="'DM Sans', sans-serif" font-size="24" fill="#fff" opacity="0.95">⚡ Search Engine Optimization &amp; PPC Ads</text>
+  <!-- URL banner at bottom -->
+  <rect x="0" y="560" width="1200" height="70" fill="rgba(0, 240, 255, 0.05)" stroke="rgba(0, 240, 255, 0.15)" stroke-width="1"/>
+  <text x="600" y="602" font-family="'Space Grotesk', sans-serif" font-size="22" fill="#00f0ff" letter-spacing="2" font-weight="bold" text-anchor="middle">QUADRAWEBSYSTEMS.ONLINE</text>
+</svg>
