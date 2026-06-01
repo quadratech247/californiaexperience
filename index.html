@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- ==========================================
+       PRIMARY SEO META TAGS
+       ========================================== -->
+  <title>California Experience | The Ultimate Guide to the Golden State</title>
+  <meta name="description" content="Discover the magic of California. Explore breathtaking coastlines, majestic national parks, famous wine valleys, and vibrant cities. Plan your premium California road trip today.">
+  <meta name="keywords" content="California tourism, California travel, Yosemite, Napa Valley, Big Sur coast, Pacific Coast Highway road trip, California vacation, California wine tour, Hollywood travel">
+  <meta name="author" content="California Experience">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://californiaexperience.com/">
+
+  <!-- ==========================================
+       OPEN GRAPH META TAGS
+       ========================================== -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://californiaexperience.com/">
+  <meta property="og:title" content="California Experience | The Ultimate Guide to the Golden State">
+  <meta property="og:description" content="Embark on an unforgettable California adventure. From high cliffs to sun-kissed beaches, plan your trip with our luxury animated guide.">
+  <meta property="og:image" content="assets/california_hero_coastline.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:site_name" content="California Experience">
+
+  <!-- ==========================================
+       FONTS & STYLESHEETS
+       ========================================== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Custom Animated Cursor Elements -->
+  <div class="custom-cursor" id="cursor"></div>
+  <div class="custom-cursor-ring" id="cursor-ring"></div>
+
+  <!-- Scroll Progress Indicator -->
+  <div class="scroll-progress-container">
+    <div class="scroll-progress-bar" id="scroll-progress"></div>
+  </div>
+
+  <!-- ==========================================
+       HEADER NAVIGATION
+       ========================================== -->
+  <header>
+    <nav class="header-nav" id="navbar">
+      <a href="#home" class="logo">
+        <span class="logo-icon">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+        </span>
+        <span>California<span style="color: var(--primary);">Experience</span></span>
+      </a>
+      
+      <button class="hamburger" id="hamburger-btn" aria-label="Toggle Navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#destinations">Destinations</a></li>
+        <li><a href="#roadtrip">Scenic Road Trip</a></li>
+        <li><a href="#vibes">Traveler Vibes</a></li>
+        <li><a href="#faqs">Travel FAQs</a></li>
+        <li><a href="#inquire" class="btn btn-secondary" style="padding: 8px 18px; border-radius: 8px; font-size: 0.9rem;">Plan Your Vibe</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ==========================================
+         HERO SECTION (Parallax & Video/Image)
+         ========================================== -->
+    <section class="hero-section" id="home">
+      <div class="hero-background-wrapper">
+        <img src="assets/california_hero_coastline.png" alt="California Coastline at Golden Hour" class="hero-bg-image">
+      </div>
+      <canvas id="hero-canvas"></canvas>
+      <div class="hero-gradient-orb hero-orb-1"></div>
+      <div class="hero-gradient-orb hero-orb-2"></div>
+      
+      <div class="hero-content">
+        <div class="hero-tag">The Golden State Voyage</div>
+        <h1 class="hero-title">
+          The State of <span class="gradient-text">Dreamers & Explorers</span>
+        </h1>
+        <p class="hero-subtitle">
+          From dramatic sea cliffs of Big Sur and misty redwood paths, to iconic Napa wineries and Hollywood lights. Your signature California adventure begins here.
+        </p>
+        
+        <div class="hero-actions">
+          <a href="#destinations" class="btn btn-primary">Explore Destinations</a>
+          <a href="#roadtrip" class="btn btn-secondary">Plan Road Trip</a>
+        </div>
+
+        <div class="stats-grid">
+          <div class="stat-item">
+            <h3><span class="count" data-target="840">0</span>+ Mi</h3>
+            <p>Scenic Coastline</p>
+          </div>
+          <div class="stat-item">
+            <h3><span class="count" data-target="280">0</span>+</h3>
+            <p>Sunny Days / Year</p>
+          </div>
+          <div class="stat-item">
+            <h3><span class="count" data-target="9">0</span></h3>
+            <p>National Parks</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         DESTINATIONS SECTION (With interactive filtering)
+         ========================================== -->
+    <section class="section-padding" id="destinations">
+      <div class="bg-gradient-orb orb-cyan" style="top: 10%; left: -15%; animation: float-slow 20s infinite alternate ease-in-out;"></div>
+      <div class="bg-gradient-orb orb-purple" style="bottom: 10%; right: -15%; animation: float-reverse 24s infinite alternate ease-in-out;"></div>
+      
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Iconic Escapes</span>
+          <h2 class="section-title">Bespoke <span class="gradient-text">Destinations</span></h2>
+          <p class="section-subtitle">Filter through diverse regions and choose your next signature adventure.</p>
+        </div>
+ 
+        <div class="portfolio-filters reveal">
+          <button class="filter-btn active" data-filter="all">All escapes</button>
+          <button class="filter-btn" data-filter="coastline">Coastline</button>
+          <button class="filter-btn" data-filter="parks">National Parks</button>
+          <button class="filter-btn" data-filter="wine">Wine Country</button>
+          <button class="filter-btn" data-filter="cities">Desert & Cities</button>
+        </div>
+
+        <div class="portfolio-grid">
+          <!-- Big Sur -->
+          <div class="portfolio-item reveal" data-category="coastline">
+            <img src="assets/california_hero_coastline.png" alt="Big Sur Coastline" class="portfolio-img">
+            <div class="portfolio-overlay">
+              <span class="portfolio-tag">Coastline Adventure</span>
+              <h3 class="portfolio-title">Big Sur Highway</h3>
+              <a href="#destinations" class="portfolio-link" data-dest="bigsur">
+                Discover the Cliffs
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+            </div>
+          </div>
+ 
+          <!-- Yosemite -->
+          <div class="portfolio-item reveal" data-category="parks">
+            <img src="assets/california_yosemite.png" alt="Yosemite Valley" class="portfolio-img">
+            <div class="portfolio-overlay">
+              <span class="portfolio-tag">National Parks</span>
+              <h3 class="portfolio-title">Yosemite Valley</h3>
+              <a href="#destinations" class="portfolio-link" data-dest="yosemite">
+                Explore Granite Peaks
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+            </div>
+          </div>
+ 
+          <!-- Napa Valley -->
+          <div class="portfolio-item reveal" data-category="wine">
+            <img src="assets/project1.png" alt="Napa Valley Wine Estates" class="portfolio-img">
+            <div class="portfolio-overlay">
+              <span class="portfolio-tag">Wine Country</span>
+              <h3 class="portfolio-title">Napa & Sonoma Valleys</h3>
+              <a href="#destinations" class="portfolio-link" data-dest="napavalley">
+                Indulge Wine Tastings
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+            </div>
+          </div>
+ 
+          <!-- Hollywood -->
+          <div class="portfolio-item reveal" data-category="cities">
+            <img src="assets/project2.png" alt="Hollywood and Los Angeles" class="portfolio-img">
+            <div class="portfolio-overlay">
+              <span class="portfolio-tag">Cities & Culture</span>
+              <h3 class="portfolio-title">Hollywood & Los Angeles</h3>
+              <a href="#destinations" class="portfolio-link" data-dest="hollywood">
+                Experience the Stars
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+            </div>
+          </div>
+ 
+          <!-- Palm Springs -->
+          <div class="portfolio-item reveal" data-category="cities">
+            <img src="assets/project4.png" alt="Palm Springs Desert Resort" class="portfolio-img">
+            <div class="portfolio-overlay">
+              <span class="portfolio-tag">Desert Resorts</span>
+              <h3 class="portfolio-title">Palm Springs Oasis</h3>
+              <a href="#destinations" class="portfolio-link" data-dest="palmsprings">
+                Relax Under Palms
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+            </div>
+          </div>
+ 
+          <!-- Lake Tahoe -->
+          <div class="portfolio-item reveal" data-category="parks">
+            <img src="assets/project3.png" alt="Lake Tahoe" class="portfolio-img">
+            <div class="portfolio-overlay">
+              <span class="portfolio-tag">National Parks & Lakes</span>
+              <h3 class="portfolio-title">Lake Tahoe</h3>
+              <a href="#destinations" class="portfolio-link" data-dest="laketahoe">
+                Behold Alpine Waters
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         ROAD TRIP SECTION (PCH Road Trip Route)
+         ========================================== -->
+    <section class="section-padding" id="roadtrip">
+      <div class="bg-gradient-orb orb-purple" style="top: 30%; right: -15%; animation: float-moderate 24s infinite alternate ease-in-out;"></div>
+      
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Epic Drives</span>
+          <h2 class="section-title">Pacific Coast Highway <span class="gradient-text">Roadmap</span></h2>
+          <p class="section-subtitle">800+ miles of breathtaking coast, redwood arches, and legendary beach towns.</p>
+        </div>
+
+        <div class="process-timeline">
+          <!-- Step 1 -->
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-number">01</div>
+            <div class="timeline-card glass-panel">
+              <h3>San Francisco & Golden Gate</h3>
+              <p>Start your journey at the famous Golden Gate bridge. Cycle along Fisherman's Wharf, explore the cable car tracks, and catch sunset at Twin Peaks.</p>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-number">02</div>
+            <div class="timeline-card glass-panel">
+              <h3>Monterey & Carmel-by-the-Sea</h3>
+              <p>Stroll through ocean vistas, visit the legendary Monterey Bay Aquarium, drive down the scenic 17-Mile Drive, and stay in Carmel's fairy-tale cottages.</p>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-number">03</div>
+            <div class="timeline-card glass-panel">
+              <h3>Big Sur & Bixby Bridge</h3>
+              <p>Feel the coastal chill as you pass over Bixby Canyon Bridge. Gaze at McWay Falls, a waterfall dropping directly onto a pristine cove beach.</p>
+            </div>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-number">04</div>
+            <div class="timeline-card glass-panel">
+              <h3>Santa Barbara & Coast</h3>
+              <p>Savor coastal wines and Spanish-colonial architecture. Explore beach pathways, palm-lined avenues, and sail out towards the Channel Islands.</p>
+            </div>
+          </div>
+
+          <!-- Step 5 -->
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-number">05</div>
+            <div class="timeline-card glass-panel">
+              <h3>Los Angeles & Santa Monica</h3>
+              <p>Finish your drive under the ferris wheel of the Santa Monica Pier. Stroll through Venice Beach, capture the Hollywood sign, and watch the waves roll in.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         TRAVELER VIBES SECTION (Reviews & Cards)
+         ========================================== -->
+    <section class="section-padding" id="vibes">
+      <div class="bg-gradient-orb orb-pink" style="top: 15%; right: -15%; animation: float-reverse 26s infinite alternate ease-in-out;"></div>
+      <div class="bg-gradient-orb orb-cyan" style="bottom: 10%; left: -15%; animation: float-slow 22s infinite alternate ease-in-out;"></div>
+      
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Traveler Stories</span>
+          <h2 class="section-title">California <span class="gradient-text">Vibes</span></h2>
+          <p class="section-subtitle">Real experiences and memories shared by travelers who lived the California dream.</p>
+        </div>
+ 
+        <div class="pricing-grid">
+          <!-- Traveler Card 1 -->
+          <div class="pricing-card glass-panel card-accent-cyan reveal">
+            <div class="traveler-header">
+              <span class="pricing-badge">Scenic Coast</span>
+              <h3>"A dream road trip"</h3>
+            </div>
+            <p class="pricing-desc">"Driving down the Pacific Coast Highway under golden sun rays was absolute magic. Watching the waterfall at McWay Falls is a core memory."</p>
+            <div class="traveler-author" style="margin-top:auto;">
+              <strong>— Sophia L.</strong>
+              <span style="display:block; font-size:0.85rem; color:var(--text-muted);">From Boston, MA</span>
+            </div>
+          </div>
+ 
+          <!-- Traveler Card 2 -->
+          <div class="pricing-card glass-panel card-accent-purple popular reveal">
+            <div class="traveler-header">
+              <span class="pricing-badge">National Parks</span>
+              <h3>"Yosemite took my breath away"</h3>
+            </div>
+            <p class="pricing-desc">"Waking up to misty valleys and seeing sunlight pierce through towering redwoods was ethereal. The granite cliffs are massive."</p>
+            <div class="traveler-author" style="margin-top:auto;">
+              <strong>— Marcus K.</strong>
+              <span style="display:block; font-size:0.85rem; color:var(--text-muted);">From Munich, Germany</span>
+            </div>
+          </div>
+ 
+          <!-- Traveler Card 3 -->
+          <div class="pricing-card glass-panel card-accent-amber reveal">
+            <div class="traveler-header">
+              <span class="pricing-badge">Wine Country</span>
+              <h3>"Absolute food & wine luxury"</h3>
+            </div>
+            <p class="pricing-desc">"Napa Valley vineyards are gorgeous. We spent afternoons sipping Cabernet Sauvignon under warm breezes and dining in Michelin-star spots."</p>
+            <div class="traveler-author" style="margin-top:auto;">
+              <strong>— Elena R.</strong>
+              <span style="display:block; font-size:0.85rem; color:var(--text-muted);">From Austin, TX</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         TRAVEL FAQS SECTION
+         ========================================== -->
+    <section class="section-padding" id="faqs">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Planning Guides</span>
+          <h2 class="section-title">Frequently Asked <span class="gradient-text">Questions</span></h2>
+          <p class="section-subtitle">Get immediate insights on booking passes, packing, and timing your trip.</p>
+        </div>
+
+        <div class="faq-container">
+          <!-- FAQ 1 -->
+          <div class="faq-item glass-panel reveal">
+            <button class="faq-header" aria-expanded="false" id="faq-q1">
+              <h3>When is the best time to drive the Pacific Coast Highway?</h3>
+              <div class="faq-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+              </div>
+            </button>
+            <div class="faq-content" aria-labelledby="faq-q1">
+              <div class="faq-body">
+                The best time to drive the PCH is from late spring to early autumn (May to October). The weather is sunny, coastal fog clears up by mid-day, and park roadways remain open. Driving north-to-south places you on the ocean-side lane for better views.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="faq-item glass-panel reveal">
+            <button class="faq-header" aria-expanded="false" id="faq-q2">
+              <h3>Do I need reservation passes for Yosemite National Park?</h3>
+              <div class="faq-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+              </div>
+            </button>
+            <div class="faq-content" aria-labelledby="faq-q2">
+              <div class="faq-body">
+                Yes, during busy peak seasons (typically spring/summer weekends and holidays), Yosemite requires reservation passes for day-use vehicles. Always check the official National Park Service portal to reserve your slot well in advance.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="faq-item glass-panel reveal">
+            <button class="faq-header" aria-expanded="false" id="faq-q3">
+              <h3>What type of clothing should I pack for California?</h3>
+              <div class="faq-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+              </div>
+            </button>
+            <div class="faq-content" aria-labelledby="faq-q3">
+              <div class="faq-body">
+                Layering is key! California weather varies drastically. The beaches can get chilly and breezy due to marine layers, San Francisco is famously cool, while desert locations like Palm Springs can be extremely hot. Bring windbreakers, sturdy boots for hiking, and casual warm-weather wear.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="faq-item glass-panel reveal">
+            <button class="faq-header" aria-expanded="false" id="faq-q4">
+              <h3>Can I book custom guided tours through your platform?</h3>
+              <div class="faq-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+              </div>
+            </button>
+            <div class="faq-content" aria-labelledby="faq-q4">
+              <div class="faq-body">
+                Yes! Through our inquiry form below, you can select custom styles (Adventure, Wine Tasting, Desert Relaxation, Cities Tour). Our travel specialists will outline a tailored itinerary with trusted boutique hotels, local guides, and car hire recommendations.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         PLANNER / CONTACT SECTION (Custom Booking Inquiry)
+         ========================================== -->
+    <section class="section-padding" id="inquire">
+      <div class="bg-gradient-orb orb-cyan" style="top: 20%; right: -10%; animation: float-slow 28s infinite alternate ease-in-out;"></div>
+      <div class="bg-gradient-orb orb-pink" style="bottom: 20%; left: -10%; animation: float-reverse 25s infinite alternate ease-in-out;"></div>
+      
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Plan Your Escape</span>
+          <h2 class="section-title">Design Your California <span class="gradient-text">Vibe</span></h2>
+          <p class="section-subtitle">Select your preferences below to outline a personalized, premium travel guide.</p>
+        </div>
+
+        <div class="contact-layout">
+          <!-- Info Details -->
+          <div class="contact-info reveal">
+            <div>
+              <p class="contact-info-desc">
+                Let our signature itinerary curators draft a premium travel planner based on your travel desires. Most requests receive a fully customized itinerary within 24 hours.
+              </p>
+              
+              <div class="contact-details">
+                <div class="contact-detail-item">
+                  <div class="contact-detail-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                  </div>
+                  <div class="contact-detail-text">
+                    <h4>Direct Curators</h4>
+                    <p>explore@californiaexperience.com</p>
+                  </div>
+                </div>
+
+                <div class="contact-detail-item">
+                  <div class="contact-detail-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                  </div>
+                  <div class="contact-detail-text">
+                    <h4>Concierge Studio</h4>
+                    <p>Santa Monica, California</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="social-links">
+              <a href="#" class="social-btn" aria-label="LinkedIn Profile"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+              <a href="#" class="social-btn" aria-label="X Profile"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a>
+              <a href="#" class="social-btn" aria-label="Instagram Profile"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+            </div>
+          </div>
+
+          <!-- Planner Form -->
+          <div class="contact-form-panel glass-panel reveal">
+            <form id="project-contact-form">
+              <div class="form-group">
+                <input type="text" id="user-name" class="form-input" placeholder=" " required>
+                <label for="user-name" class="form-label">Full Name</label>
+              </div>
+
+              <div class="form-group">
+                <input type="email" id="user-email" class="form-input" placeholder=" " required>
+                <label for="user-email" class="form-label">Email Address</label>
+              </div>
+
+              <div class="form-group">
+                <select id="user-vibe" class="form-input" required style="background: rgba(255,255,255,0.02); color:#fff;">
+                  <option value="" disabled selected>Select Travel Vibe</option>
+                  <option value="coastal">Coastal Road Trip & Surf</option>
+                  <option value="parks">Nature Trails & National Parks</option>
+                  <option value="wine">Vineyards, Spa & Fine Dining</option>
+                  <option value="desert">Desert Oasis & Modern Culture</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <textarea id="user-message" class="form-input" placeholder=" " required></textarea>
+                <label for="user-message" class="form-label">Details / Tell Us About Your Dream Trip</label>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%;">
+                Submit Inquiry
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+              </button>
+              
+              <div class="submit-alert" id="form-alert"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================
+       MODAL DETAILED EXPERIENCE DIALOG
+       ========================================== -->
+  <div class="modal-overlay" id="detail-modal">
+    <div class="modal-card glass-panel">
+      <button class="modal-close" id="modal-close-btn" aria-label="Close details popup">&times;</button>
+      <div class="modal-body-content">
+        <h2 id="modal-title" class="gradient-text">Destination Detail</h2>
+        <div class="modal-image-container">
+          <img id="modal-img" src="" alt="Destination Image">
+        </div>
+        <div class="modal-text-section">
+          <p id="modal-desc" class="modal-description">Detailed descriptive content goes here.</p>
+          <div class="modal-highlights">
+            <h4>Highlights & Activities</h4>
+            <ul id="modal-hightlights-list">
+              <li>Activity 1</li>
+              <li>Activity 2</li>
+            </ul>
+          </div>
+          <div class="modal-tips">
+            <h4>Traveler Tip</h4>
+            <p id="modal-tip-text">Pro tip text goes here.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       FOOTER
+       ========================================== -->
+  <footer>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="#home" class="logo">
+          <span class="logo-icon">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+          </span>
+          <span>California<span style="color: var(--primary);">Experience</span></span>
+        </a>
+        <p>Premium guides, personalized trip planners, and luxury road trip itineraries designed to give you the ultimate California experience.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Regions</h4>
+        <ul class="footer-links">
+          <li><a href="#destinations">Pacific Coastline</a></li>
+          <li><a href="#destinations">Sierra Nevada & Parks</a></li>
+          <li><a href="#destinations">Wine & Food Valley</a></li>
+          <li><a href="#destinations">Southern Deserts</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul class="footer-links">
+          <li><a href="#home">Home Base</a></li>
+          <li><a href="#destinations">Escapes Grid</a></li>
+          <li><a href="#roadtrip">Scenic PCH Drive</a></li>
+          <li><a href="#vibes">Traveler Testimonials</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-newsletter">
+        <h4>Weekly Vibe Letter</h4>
+        <p>Subscribe to receive scenic guide books, itinerary updates, and seasonal travel packages.</p>
+        <form class="newsletter-form" id="newsletter-form">
+          <input type="email" class="newsletter-input" placeholder="Traveler Email" required aria-label="Newsletter email address">
+          <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 California Experience. All rights reserved.</p>
+      <div class="footer-terms">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Voyage</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================
+       JAVASCRIPT
+       ========================================== -->
+  <script src="main.js"></script>
+</body>
+</html>
